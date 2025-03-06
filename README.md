@@ -14,7 +14,7 @@ To compile the program, use the following command:
 mpicc -o mpi-infiniband-benchmark mpi-infiniband-benchmark.c
 ```
 
-###Execution
+Execution
 To run the benchmark, use the following command:
 ```bash
 mpirun -np 2 --host [node1],[node2] ./mpi-infiniband-benchmark [time(s)]
@@ -41,7 +41,7 @@ mpirun -np 2 --host hpc1,hpc2 ./mpi-infiniband-benchmark 60
 mpicc -o mpi-infiniband-benchmark mpi-infiniband-benchmark.c
 ```
 
-###執行
+執行
 使用以下命令來執行基準測試：
 ```bash
 mpirun -np 2 --host [node1],[node2] ./mpi-infiniband-benchmark [time(s)]
