@@ -49,7 +49,10 @@ mpirun -np 2 --host [node1],[node2] ./mpi-infiniband-benchmark [time(s)]
 
 ex.
 ```bash
-mpirun -np 2 --host hpc1,hpc2 ./mpi-infiniband-benchmark 60
+mpirun -np 2 \
+  --host 192.169.200.70:1,192.169.200.71:1 \
+  --map-by :OVERSUBSCRIBE \
+  ./mpi-infiniband-benchmark 10
 ```
 
 
