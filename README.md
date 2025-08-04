@@ -24,6 +24,17 @@ ex.
 mpirun -np 2 --host hpc1,hpc2 ./mpi-infiniband-benchmark 60
 ```
 
+```bash
+mpirun -np 2 \
+--hostfile ~/MPI-InfiniBand-Benchmark/hostfile \
+--mca pml ucx \
+--mca osc ucx \
+--mca btl ^vader,tcp,self \
+--mca ucx_net_devices mlx5_0:1 \
+--mca ucx_tls rc \
+--bind-to none --map-by slot \
+~/MPI-InfiniBand-Benchmark/mpi-infiniband-benchmark 10
+```
 
 ---
 
