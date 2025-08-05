@@ -36,6 +36,12 @@ mpirun -np 2 \
 ~/MPI-InfiniBand-Benchmark/mpi-infiniband-benchmark 10
 ```
 
+```
+mpicc -O2 -o mpi-infiniband-benchmark mpi-infiniband-benchmark-8.c
+mpirun -np 8 --host pca1:4,pca2:4 ./mpi-infiniband-benchmark 10
+
+```
+
 ---
 
 ## 說明
